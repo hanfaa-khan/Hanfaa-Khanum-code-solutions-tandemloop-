@@ -1,0 +1,21 @@
+class OddPatternGenerator:
+    def __init__(self, a: int):
+        self.a = a
+
+    def generate_series(self):
+        result = []
+      
+        max_limit = self.a if self.a % 2 != 0 else self.a - 1
+        for i in range(1, max_limit + 1, 2):
+            result.append(i)
+        return result
+
+MAIN CLASS
+if __name__ == "__main__":
+    try:
+        a = int(input("Enter a number: "))
+        generator = OddPatternGenerator(a)
+        output = generator.generate_series()
+        print("Output:", ", ".join(map(str, output)))
+    except ValueError:
+        print("Invalid input. Please enter an integer.")
