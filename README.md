@@ -64,4 +64,4 @@ Given a list of integers, checking how many of them are divisible by each number
 ---
 
 ## 🧑‍💻 Language Used
-- **Python** (All problems can be implemented in Python)
+- **Python** (All problems are implemented in Python)
